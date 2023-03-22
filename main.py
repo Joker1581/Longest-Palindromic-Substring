@@ -11,7 +11,7 @@ class Solution:
             even_p = self.expand(s, i-1, i)
             longest_p = max(odd_p, even_p, key=lambda x: x[1] - x[0])
             cur_p = max(longest_p, cur_p, key=lambda x: x[1] - x[0])
-            return s[cur_p[0]: cur_p[1]]
+        return s[cur_p[0]: cur_p[1]]
         
 if __name__ == "__main__":
     print(Solution.longestPalindrome(Solution, "babad"))
